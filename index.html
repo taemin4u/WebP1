@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>New Tab</title>
+    <script src="https://kit.fontawesome.com/7cbf5e78b7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <header class="head">
+        <div class="LinkSearchWeather">
+            <div class="link flexitem">
+                <span class="links">Links</span>
+                <!--여기에 margin-left를 넣으니 text가 밑으로 내려갔음-->
+                <span id="move"><i class="fas fa-link"></i></span>
+                <input type="text" id='inputLink' placeholder="Where to Go?" onkeyup='getLink()'>
+            </div>
+
+            <form class="search">
+                Search
+                <button class="img_button" type="submit" name="click">
+                    <i class="fas fa-search"></i>
+                </button>
+                <input type="text" id="inputSearch" name="search" maxlength=255 autocomplete="off"
+                    placeholder="What to Search?">
+
+                <select name="whichSearch" class="selectSearch">
+                    <option value="google" id="google">Google</option>
+                    <option value="naver" id="naver">Naver</option>
+                </select>
+            </form>
+            <!-- https://showyourself.tistory.com/3 검색기능구현-->
+        </div>
+        <div class="linkBtn">
+            <button id="naver1">Naver</button>
+            <button id="google1">Google</button>
+            <button id="youtube">Youtube</button>
+            <button id="univ">KHU</button>
+        </div>
+    </header>
+
+    <section class="clockAndGreetAndTodo">
+        <div class="clockAndGreet">
+            <p class="large" id="date"></p>
+            <p class="xlarge" id="time"></p>
+            <p class="large" id="greet"></p>
+        </div>
+        <div class="Todo">
+            <div class="misson">
+                <p class="large">Today's Misson</p>
+                <input type="text" id="inputMisson" placeholder="Input Your Misson">
+                <button class="img_button todo_button">
+                    <i class="fas fa-arrow-circle-down fa-2x"></i>
+                </button>
+            </div>
+            <div class="ingAndClear">
+                <div class="ing">
+                    <p class="large">Today's Misson</p>
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="clear">
+                    <p class="large">Clear</p>
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

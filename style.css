@@ -1,0 +1,201 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: rgb(37, 128, 97);
+    height: 100vh;
+    color: #fff;
+
+}
+
+.head {
+    position: relative;
+    height: 30vh;
+}
+
+.LinkSearchWeather {
+    display: flex;
+}
+
+
+.link {
+    margin-top: 1.5%;
+    margin-left: 1%
+}
+
+.search {
+    margin-top: 1.5%;
+    margin-left: 5%
+}
+
+.img_button {
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 10px;
+    width:30px;
+    height: 25px;
+    border: 0;
+    border-radius: 10%;
+    outline: 0;
+}
+
+.img_button:active {
+    background-color: aquamarine;
+}
+
+.selectSearch {
+    height: 26px;
+}
+
+#inputLink, #inputSearch {
+    height: 26px; 
+    padding-left: 5px;
+}
+
+#move  {
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+/* -------------------------------- Link Button */
+.linkBtn {
+    margin-top: 3%;
+    margin-left: 1.5%;
+}
+
+.linkBtn button {
+    background-color: rgb(143, 218, 134);
+    font-family: "paybooc-Light", sans-serif;
+    width: 100px;
+    height: 40px;
+    margin-right: 3.5%;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5%;
+    font-size: 1rem;
+    color: rgb(34, 34, 34);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    transition: 0.25s;
+}
+
+.linkBtn button:hover {
+    transform: scale(1.2);
+    text-align: center;
+}
+
+.linkBtn button:active {
+    background-color: thistle;
+}
+
+.clockAndGreetAndTodo {
+    position: relative;
+    
+}
+
+.clockAndGreet {
+    position: absolute;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#date {
+    margin-top: 50px;
+}
+
+
+/* font size ----------------------- */
+
+.large {
+    font-size: 3rem;
+}
+
+.xlarge {
+    font-size:  10rem;
+}
+
+/* Todo --------------------------------*/
+
+.Todo {
+    position: absolute;
+    top: 0%;
+    left:50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#inputMisson {
+    background-color: rgb(37, 128, 97);
+    border-bottom: 5px solid gray;
+    border-radius: 10%;
+    outline: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    height: 40px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#inputMisson::placeholder {
+    color: black;
+}
+
+.todo_button {
+    height: 30px;
+    background-color: rgb(37, 128, 97);
+    margin-top: 0;
+}
+
+.ingAndClear {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.ingAndClear .ing {
+    width: 50%;
+    text-align: center;
+    border-right: 2px solid black;
+}
+
+.ingAndClear .clear {
+    width: 50%;
+    text-align: center;
+
+}
+
+ul {
+    margin-top: 20px;
+}
+
+ul li {
+    font-size: 2rem;
+    line-height: 140%;
+}
+
+.ing ul li input {
+    width: 2rem;
+    height: 1.5rem;
+    margin-left: 10px;
+    background-color:rgb(37, 128, 97) ;
+}
