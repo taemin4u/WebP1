@@ -106,7 +106,8 @@ const missonUl = document.querySelector('.ing ul');
 const clearUl = document.querySelector('.clear ul');
 
 let myMisson = [];
-todoForm.addEventListener('click', function () {
+
+function addMisson() {
     let inputMisson = document.getElementById('inputMisson');
     let newMisson = inputMisson.value;
     if (newMisson !== '') {
@@ -115,9 +116,12 @@ todoForm.addEventListener('click', function () {
     missonUl.innerHTML = '';
 
     for (let i = 0; i < myMisson.length; i++) {
+        let cbId = "cb" + i;
+        let newLabel = "<label for='" + cbId + "'></label>"
+        let trash = '<span id="trash"><i class="fas fa-trash-alt"></i></span>'
         let tmp = myMisson[i];
         let newItem = document.createElement('li');
-        newItem.innerHTML = tmp + "<input type='checkbox'>";
+        newItem.innerHTML = "<span>" + tmp + "<input type='checkbox' id='" + cbId + "'>" + newLabel + trash + "</span>";
         missonUl.appendChild(newItem);
     }
 
@@ -126,9 +130,25 @@ todoForm.addEventListener('click', function () {
     }
     inputMisson.focus();
     inputMisson.value = '';
+}
+todoForm.addEventListener('click', addMisson);
+
+const ingCb = document.querySelector('.ing ul li span input');
+
+ingCb.addEventListener('click', function (e) {
+    const cbList = document.querySelectorAll('.ing ul li span input');
+
 })
 
-// 체크박스 꾸미기
+let trashing = document.getElementById('trash');
+
+trashing.addEventListener('click', function () {
+
+})
+
+// 체크박스 꾸미기 O
 // 체크박스 선택 시 clear로 옮기기
 // 삭제하기 구현
 // 리셋 버튼 구현
+
+
